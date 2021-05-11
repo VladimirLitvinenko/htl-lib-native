@@ -1,0 +1,6 @@
+//#if defined(QT_GUI_LIB) or defined(QT_CORE_LIB)
+//# include "qt/Global.h"
+//#else
+# include "common/Global.h"
+//#endif
+#include "common/Types.h"

@@ -1,0 +1,15 @@
+TEMPLATE = lib
+include( $$PWD/server.pri)
+
+HEADERS += $$SERVER_HEADERS
+SOURCES += $$SERVER_SOURCES
+
+TARGET = $${LIB_SERVER_NAME}$${PROJECT_SUFFIX}
+
+target.path = $${INSTALL_LIB_PATH}
+
+INSTALLS += \
+  target \
+
+OTHER_FILES += \
+  $$PWD/README.md
